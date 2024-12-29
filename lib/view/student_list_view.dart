@@ -37,10 +37,11 @@ class StudentViewState extends State<StudentListView> {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
+            color: Colors.white,
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.black, // Black background
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -53,7 +54,7 @@ class StudentViewState extends State<StudentListView> {
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white, // White text
                 ),
               ),
               const SizedBox(height: 10),
@@ -66,7 +67,7 @@ class StudentViewState extends State<StudentListView> {
                       decoration: InputDecoration(
                         labelText: 'Name',
                         labelStyle: const TextStyle(
-                          color: Colors.pink,
+                          color: Colors.white, // White label
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -74,7 +75,7 @@ class StudentViewState extends State<StudentListView> {
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide:
-                              const BorderSide(color: Colors.pink, width: 2),
+                              const BorderSide(color: Colors.white, width: 2),
                         ),
                       ),
                       validator: (value) {
@@ -91,7 +92,7 @@ class StudentViewState extends State<StudentListView> {
                       decoration: InputDecoration(
                         labelText: 'Age',
                         labelStyle: const TextStyle(
-                          color: Colors.pink,
+                          color: Colors.white, // White label
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -99,7 +100,7 @@ class StudentViewState extends State<StudentListView> {
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide:
-                              const BorderSide(color: Colors.pink, width: 2),
+                              const BorderSide(color: Colors.white, width: 2),
                         ),
                       ),
                       validator: (value) {
@@ -117,7 +118,7 @@ class StudentViewState extends State<StudentListView> {
                       decoration: InputDecoration(
                         labelText: 'Address',
                         labelStyle: const TextStyle(
-                          color: Colors.pink,
+                          color: Colors.white, // White label
                         ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -125,7 +126,7 @@ class StudentViewState extends State<StudentListView> {
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide:
-                              const BorderSide(color: Colors.pink, width: 2),
+                              const BorderSide(color: Colors.white, width: 2),
                         ),
                       ),
                       validator: (value) {
@@ -138,7 +139,8 @@ class StudentViewState extends State<StudentListView> {
                     const SizedBox(height: 20),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.pink,
+                        backgroundColor:
+                            Colors.black, // Black background for button
                         padding: const EdgeInsets.symmetric(
                             vertical: 15, horizontal: 30),
                         shape: RoundedRectangleBorder(
@@ -163,6 +165,7 @@ class StudentViewState extends State<StudentListView> {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
+                          color: Colors.white, // White text on button
                         ),
                       ),
                     ),
@@ -175,7 +178,7 @@ class StudentViewState extends State<StudentListView> {
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Colors.pink,
+                  color: Colors.white, // White text
                 ),
               ),
               const SizedBox(height: 10),
@@ -196,11 +199,12 @@ class StudentViewState extends State<StudentListView> {
                           margin: const EdgeInsets.symmetric(vertical: 8),
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
-                            color: Colors.pink.shade50,
+                            color:
+                                Colors.black, // Black background for each item
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.pink.withOpacity(0.3),
+                                color: Colors.white.withOpacity(0.3),
                                 blurRadius: 5,
                                 offset: const Offset(0, 3),
                               ),
@@ -217,11 +221,24 @@ class StudentViewState extends State<StudentListView> {
                                     style: const TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
+                                      color:
+                                          Colors.white, // White text for name
                                     ),
                                   ),
                                   const SizedBox(height: 5),
-                                  Text('Age: ${student.age}'),
-                                  Text('Address: ${student.address}'),
+                                  Text(
+                                    'Age: ${student.age}',
+                                    style: const TextStyle(
+                                      color: Colors.white, // White text for age
+                                    ),
+                                  ),
+                                  Text(
+                                    'Address: ${student.address}',
+                                    style: const TextStyle(
+                                      color: Colors
+                                          .white, // White text for address
+                                    ),
+                                  ),
                                 ],
                               ),
                               IconButton(

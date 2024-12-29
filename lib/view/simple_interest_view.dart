@@ -38,10 +38,11 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
+            color: Colors.black,
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.pink,
+        // backgroundColor: Colors.black, // Black background
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -53,9 +54,9 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                 'Calculate Simple Interest',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.pink,
+                  color: Colors.black, // White color for text
                 ),
               ),
               const SizedBox(height: 20),
@@ -65,14 +66,14 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                 decoration: InputDecoration(
                   labelText: 'Principal',
                   labelStyle: const TextStyle(
-                    color: Colors.pink,
+                    color: Colors.black, // White label text
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Colors.pink, width: 2),
+                    borderSide: const BorderSide(color: Colors.black, width: 2),
                   ),
                 ),
               ),
@@ -83,14 +84,14 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                 decoration: InputDecoration(
                   labelText: 'Rate (%)',
                   labelStyle: const TextStyle(
-                    color: Colors.pink,
+                    color: Colors.black,
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Colors.pink, width: 2),
+                    borderSide: const BorderSide(color: Colors.black, width: 2),
                   ),
                 ),
               ),
@@ -101,21 +102,22 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                 decoration: InputDecoration(
                   labelText: 'Time (years)',
                   labelStyle: const TextStyle(
-                    color: Colors.pink,
+                    color: Colors.black,
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Colors.pink, width: 2),
+                    borderSide: const BorderSide(color: Colors.black, width: 2),
                   ),
                 ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink,
+                  foregroundColor: Colors.black,
+                  backgroundColor: Colors.white, // Black text
                   padding:
                       const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                   shape: RoundedRectangleBorder(
@@ -128,6 +130,7 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
+                    color: Colors.black, // Black button text
                   ),
                 ),
               ),
@@ -136,13 +139,13 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Colors.pink.shade50,
-                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white, // Black background for result
+                    borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.pink.withOpacity(0.3),
-                        blurRadius: 5,
-                        offset: const Offset(0, 3),
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
                       ),
                     ],
                   ),
@@ -153,7 +156,7 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors.pink,
+                          color: Colors.black,
                         ),
                       ),
                       const SizedBox(height: 10),
@@ -162,7 +165,7 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                         style: const TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Colors.black, // White result text
                         ),
                       ),
                     ],
@@ -177,7 +180,7 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
                   child: const Text(
                     'Please enter valid values for all fields!',
                     style: TextStyle(
-                      color: Colors.red,
+                      color: Colors.red, // Red error message
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),

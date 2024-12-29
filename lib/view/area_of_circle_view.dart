@@ -31,12 +31,10 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
         title: const Text(
           'Circle Area Calculator',
           style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-          ),
+              fontWeight: FontWeight.bold, fontSize: 18, color: Colors.black),
         ),
         centerTitle: true,
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.white,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -48,9 +46,9 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
                 'Calculate the Area of a Circle',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black87,
+                  color: Colors.black,
                 ),
               ),
               const SizedBox(height: 30),
@@ -60,7 +58,7 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
                 decoration: InputDecoration(
                   labelText: 'Radius',
                   labelStyle: const TextStyle(
-                    color: Colors.teal,
+                    color: Colors.black,
                     fontSize: 16,
                   ),
                   hintText: 'Enter the radius',
@@ -73,14 +71,14 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
-                    borderSide: const BorderSide(color: Colors.teal, width: 2),
+                    borderSide: const BorderSide(color: Colors.black, width: 2),
                   ),
                 ),
               ),
               const SizedBox(height: 30),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.teal, // Changed to teal
+                  // backgroundColor: Colors.pink,
                   padding: const EdgeInsets.symmetric(vertical: 15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -91,9 +89,9 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
                 child: const Text(
                   'Calculate Area',
                   style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
               ),
               const SizedBox(height: 30),
@@ -101,11 +99,11 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Colors.teal.shade50, // Lighter teal background
+                    // color: Colors.black.shade50,
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.teal.withOpacity(0.3),
+                        color: Colors.black.withOpacity(0.5),
                         blurRadius: 8,
                         offset: const Offset(0, 4),
                       ),
@@ -119,16 +117,16 @@ class AreaOfCircleScreenState extends State<AreaOfCircleView> {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: Colors.teal,
+                          color: Colors.white,
                         ),
                       ),
                       const SizedBox(height: 10),
                       Text(
                         _circleArea!.toStringAsFixed(2),
                         style: const TextStyle(
-                          fontSize: 28,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black87,
+                          color: Colors.white,
                         ),
                       ),
                     ],
