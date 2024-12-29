@@ -42,7 +42,7 @@ class SimpleInterestScreenState extends State<SimpleInterestView> {
           ),
         ),
         centerTitle: true,
-        // backgroundColor: Colors.black, // Black background
+        // backgroundColor: Colors.black,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
